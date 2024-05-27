@@ -18,34 +18,26 @@ import _ from 'lodash';
 const { isTablet, isIOS } = useDetectDevice;
 const ic_down = require('../../assets/down.png');
 
-const defaultProps = {
-  placeholder: 'Select item',
-  activeColor: '#F6F7F8',
-  backgroundColor: 'white',
-  data: [],
-  style: {},
-}
-
 const MultiSelectComponent = React.forwardRef<any, MultiSelectProps>((props, currentRef) => {
   const orientation = useDeviceOrientation();
   const {
     onChange,
-    data,
+    data = [],
     value,
-    style,
+    style = {},
     labelField,
     valueField,
     selectedStyle,
     selectedTextStyle,
     iconStyle,
-    activeColor,
+    activeColor = '#F6F7F8',
     containerStyle,
     fontFamily,
     placeholderStyle,
     iconColor = "gray",
     inputSearchStyle,
     searchPlaceholder,
-    placeholder,
+    placeholder = 'Select item',
     search = false,
     maxHeight = 340,
     maxSelect,
@@ -451,7 +443,4 @@ const MultiSelectComponent = React.forwardRef<any, MultiSelectProps>((props, cur
   );
 });
 
-MultiSelectComponent.defaultProps = defaultProps;
-
 export default MultiSelectComponent;
-
