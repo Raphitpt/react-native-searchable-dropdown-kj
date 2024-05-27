@@ -45,11 +45,12 @@ export const styles = StyleSheet.create({
     marginTop: 10,
   },
   input: {
-    borderWidth: 0.5,
+    borderBottomWidth: 1,
     borderColor: '#DDDDDD',
-    paddingHorizontal: 8,
+    paddingHorizontal: 20,
     marginBottom: 8,
-    margin: 6,
-    height: 45
+    marginVertical: 6,
+    height: 45,
+    gap: 10,
   },
 });
