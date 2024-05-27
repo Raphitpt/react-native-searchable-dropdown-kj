@@ -14,7 +14,8 @@ export const styles = StyleSheet.create({
     },
     input: {
       fontSize: 16,
-      flex:1
+      flex:1,
+      marginLeft: 10,
     },
     label: {
       marginBottom: 4,
